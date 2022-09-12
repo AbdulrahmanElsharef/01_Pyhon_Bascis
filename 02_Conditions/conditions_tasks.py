@@ -7,9 +7,9 @@ else:
 # we use all in case we need all conditions true
 # _______________________________________
 # diffrence between all & "and" is all when we need all conditions true
-#  "and" is logical opreator to 	Returns True if both statements are true
+#  "and" is logical opreator to Returns True if both statements are true
 # _________________________________________________________
-#  if we need all conditions true we use and
+#  if we need all conditions true we use "and"
 # ___________________________________________________________________
 # diffrence between if & elif is 
 # "if" is the first and hole conditon
