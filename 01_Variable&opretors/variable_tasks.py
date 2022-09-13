@@ -30,7 +30,7 @@ print(type(a))
 # ____________________________________
 edic={1:"abdo",2:"python",3:"django"}
 # ______________________________________
-#yes we can use semi colon ; with python 
+# yes we can use semi colon ; with python to make other statmen in same line 
 # examble
 q=15 ; u=";"
 print(u)
@@ -40,9 +40,6 @@ print(u)
 # python is interpreted language
 # _________________________________________________________
 # ## Low-Level Languages? ##
-# They are also called machine-level languages.
-# Machines can easily understand it.
-# High-level languages are very machine-friendly.
 # Debugging them is very difficult.
 # They are not very easy to understand.
 # All the languages come with complex maintenance.
@@ -65,24 +62,27 @@ print(u)
 # Java, C, C++, Python, etc., are a few examples of high-level languages.
 # ____________________________________________________
 # diffrence between = , ==
-# x=5  this mean variable x is equal 5
-# x==5 this mean ask is variable x equal to 5 and result (true or false)
+# x=5  this mean variable x is assign by 5
+# x==5 this mean ask if variable x  is equal to 5 and result (true or false)
 # _________________________________________________________________
-# ##what do we mean using !=##
-# x==5 this mean ask is variable x not equal to 5 and result (true or false)
+# ## what do we mean using != ##
+# x==5 this mean ask if variable x is not equal to 5 and result (true or false)
 # _________________________________________________________________
 #   $$ what is operator precedence in python
-# Operator precedence in Python simply refers to the order of operations. Operators are used to perform operations on variables and values. Python classifies its operators in the following groups: Arithmetic operators. Assignment operators.
+# Operator precedence in Python simply refers to the order of operations.
+#  Operators are used to perform operations on variables and values. 
+# Python classifies its operators in the 
+# following groups: Arithmetic operators. Assignment operators.
 # _________________________________________________________________
-x=10 #varaibdl
+x=10 #varaibll
 # __________________
-x+=15 #increas 5
+x+=15 #increas x by 5
 # ______________
-x/=5 #divid by 5
+x/=5 #divid x  by  5
 # _________________
-x*=10 #mult by 10
+x*=10 #mult x by 10
 # _______________________
-x%=3 #module or remainig division by 3
+x%=3 #module or remainig division x by 3
 # _________________________
 print(11%4) #print module 11,4
 # ____________________________
@@ -90,7 +90,7 @@ print(2**3) #print exponent 2,3
 # ________________________________
 print(11/3) #divid 11 by 3
 # ___________________________________
-# we can divid 11 by 3 and get in num
+# we can divid 11 by 3 and get integer num
 print(11//3) # using floor division
 # ____________________________________
 
