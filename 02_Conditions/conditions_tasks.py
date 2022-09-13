@@ -32,16 +32,9 @@ if 4 in abd_lis:
       print("4 in list")
       if 4 and 6 in abd_lis:
             print("4 & 6 in list")
-else:
-      print("number not in list")
-# ____________________________
-
-if 3 or 6 in abd_lis:
+elif 3 or 6 in abd_lis:
       print ("3 or 6 in list")
-else:
-      print("number not in list")
-#___________________________ ____________________
-if 2 and 4 and 5 in abd_lis:
+elif 2 and 4 and 5 in abd_lis:
       print("2 & 4 & 5 in list")
 else:
       print("number not in list")
