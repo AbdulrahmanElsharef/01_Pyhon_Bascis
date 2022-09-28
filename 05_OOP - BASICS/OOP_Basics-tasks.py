@@ -1,79 +1,3 @@
-# class Student():
-#       student_info = {}
-#       num_student_in = 0
-#       default_student_age = range(1, 40)
-
-#       @classmethod
-#       def student_inclass(Student):
-#            print(f"number of student in class is {Student.num_student_in}")
-
-#       @classmethod
-#       def student_inf(Student):
-#            print(f"student_1 all information is {Student.student_info}")
-
-#       @staticmethod
-#       def welcom_class(school, cname, cnum):
-#            print(
-#                f"Wekcome in {school} school your class is{cname} : class({cnum})")
-
-#       def __init__(self, name, age, subject):
-#            self.__name = name
-#             self.__age = age
-#             self.__subject = subject
-#             Student.num_student_in += 1
-#             Student.student_info.update(
-#                   {"student_name": self.__name, "student_Age": self.__age, "Student_subjects": self.__subject})
-
-#       def get_name(self):
-#            return self.__name
-
-#       def set_name(self, new_name):
-#            self.__name = new_name
-#             Student.student_info.update({"student_name": new_name})
-
-#       def get_age(self):
-#            return self.__age
-
-#       def set_age(self, new_age):
-#            self.__age = new_age
-#             Student.student_info.update({"student_Age": new_age})
-
-#       def get_subject(self):
-#            return self.__subject
-
-#       def set_subjects(self, new_subject):
-#            self.__subject = new_subject
-#             Student.student_info.update({"Student_subjects": new_subject})
-
-#       def chek_age(self):
-#            if self.__age in Student.default_student_age:
-#                  print("you are valid studen")
-#             else:
-#                  print("invalid student")
-
-
-# student_1 = Student("hamada",45,["hg","ku"])
-# student_1.welcom_class("salah salem", 'Math',"2/3")
-# student_1.student_inf()
-# student_1.set_name("abdo fawzy")
-# student_1.set_age(38)
-# student_1.set_subjects(["france", "math"])
-# student_1.student_inf()
-# student_1.student_inclass()
-# student_1.chek_age()
-# print("*"*50)
-
-# student_2 = Student("MARWA", 25, {"France": 23,"ar":"exelent"})
-# student_2.welcom_class("Atef Elsadat", 'Arabic', "1/6")
-# student_2.student_inf()
-# student_2.set_name("joud")
-# student_2.set_age(3)
-# student_2.set_subjects({"arab": 23, "eng": "accept"})
-# student_2.student_inf()
-# student_2.student_inclass()
-# student_2.chek_age()
-# print("*"*50)
-
 
 
 from ast import Pass
@@ -168,3 +92,122 @@ iphone model () Is Beta Edition
 iphone model ()Is Unavilabe for Selling Befor 31/6/2023
 _____________________________________________________
 '''
+
+
+class Student():
+     ''' new class of class Student():'''
+
+     def __init__(self, name):
+          self.name = name
+          # self.age = age
+          # self.subject = subject
+          self.marks = {}
+
+     def add_mark(self, subject,mark):
+          self.marks[subject] = mark
+
+     def student_av(self):
+          sub = list(self.marks.keys())         
+          avr = sum(self.marks.values())/len(self.marks.values())
+          print(f"student Subjects is {sub}")
+          print(f"student avreage marks is {avr}")
+
+
+print("____________________________________________________")
+
+st_1 = Student("abdo")
+st_1.add_mark('Math',53)
+st_1.add_mark('Arabic', 66)
+st_1.add_mark('English', 88)
+st_1.add_mark('Science', 91)
+st_1.student_av()
+
+print("____________________________________________________")
+
+'''____________________________________________________
+student Subjects is ['Math', 'Arabic', 'English', 'Science']
+student avreage marks is 74.5
+_______________________________________________________'''
+
+
+
+class Bank():
+     '''creat bank class'''
+     def __init__(self,name,gender,age):
+          self.name=name
+          self.gender=gender
+          self.age=age          
+     
+class User(Bank):
+     '''creat User class'''
+
+     def __init__(self, name, gender, age,id):
+          super().__init__( name, gender, age)
+          self.id=id
+          self.balance=0
+
+     def craet_accont(self):
+          print("New Acoount Is Created")
+          print(f"Hello Mr {self.name} Your Account is *0028-9-2022{self.id}ah-he* Your Current Balance is {self.balance}")
+
+     def account_details(self):
+          print("show user account details".title())
+          print(f"user_name = {self.name}\nuser_age = {self.age}\nuser_gender = {self.gender}\nuser_Id = {self.id}")
+
+     def debosit_withdraw(self,cash,opreation):
+          if opreation=="withdraw":
+               if cash > self.balance:
+                    print(f"Your Balance is {self.balance} withdraw Another mount")
+               else:
+                    self.balance-=cash
+                    print(f"sucssufel withdrawour  your current Balance is {self.balance} ")
+          elif opreation == "debosit":
+               self.balance += cash
+               print(f"sucssufel debosit  your current Balance is {self.balance} ")
+          else:
+               print("This Opreatin Is Invalid")
+
+user01=User("abdo","male",35,"0105258")
+user01.craet_accont()
+print("___________________________________________\n")
+user01.account_details()
+print("___________________________________________\n")
+
+user01.debosit_withdraw(1500, "debosit")
+user01.debosit_withdraw(1050, "withdraw")
+user01.debosit_withdraw(850, "debosit")
+print("____________________________________________\n")
+user01.debosit_withdraw(630, "debosit")
+user01.debosit_withdraw(16800, "withdraw")
+user01.debosit_withdraw(1680,"withdraw")
+user01.debosit_withdraw(400, "debosit")
+print("____________________________________________\n")
+
+
+'''New Acoount Is Created
+Hello Mr abdo Your Account is *0028-9-20220105258ah-he* Your Current Balance is 0
+___________________________________________
+
+Show User Account Details
+user_name = abdo
+user_age = 35
+user_gender = male
+user_Id = 0105258
+___________________________________________
+
+sucssufel debosit  your current Balance is 1500
+sucssufel withdrawour  your current Balance is 450
+sucssufel debosit  your current Balance is 1300
+____________________________________________
+
+sucssufel debosit  your current Balance is 1930
+Your Balance is 1930 withdraw Another mount
+sucssufel withdrawour  your current Balance is 250
+sucssufel debosit  your current Balance is 650
+____________________________________________
+'''
+
+
+
+
+
