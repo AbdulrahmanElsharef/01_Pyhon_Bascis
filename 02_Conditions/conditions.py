@@ -96,7 +96,7 @@ else:
   print("a is greater than b")
 #This technique is known as Ternary Operators, or Conditional Expressions.
 print("A") if a > b else print("B")
-#Test if a is greater than b, AND if c is greater than a:
+#Test if a is greater than b, and if c is greater than a:
 
 a = 200
 b = 33
