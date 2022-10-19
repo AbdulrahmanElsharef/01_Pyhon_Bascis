@@ -11,10 +11,6 @@
 # # 75.0 '''                                                            .py"
 
 
-
-
-
-
 # # Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array. Create a function that takes an array and returns the sum of all numbers in the array.
 # '''def numbersSum(l):
 #       lis=l
@@ -36,8 +32,6 @@
 # # sum of list = 15'''
 
 
-
-
 # # You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find Nemo]!".
 # # If you can't find Nemo, return "I can't find Nemo :(".
 # '''def findNemo(s):
@@ -48,13 +42,10 @@
 
 # findNemo("I am finding Nemo !")
 # # "I found Nemo at 4!"
-# findNemo("Nemo is me") 
+# findNemo("Nemo is me")
 # # "I found Nemo at 1!"
-# findNemo("I Nemo am") 
+# findNemo("I Nemo am")
 # # "I found Nemo at 2!"'''
-
-
-
 
 
 '''def compareTriplets(a, b):
@@ -148,10 +139,6 @@ capToFront("shOrtCAKE")
 # OCAKEshrt'''
 
 
-
-
-
-
 # Mubashir was reading about currying functions. He needs your help to multiply an array of numbers using currying functions.
 
 # Create a function which takes a array arr of integers as an argument. This function must return another function, which takes a single integer as an argument and returns a new array.
@@ -208,7 +195,7 @@ fizz_buzz(15) #➞ "FizzBuzz"
 
 fizz_buzz(4) #➞ "4'''
 
-#_________________________________________________________________
+# _________________________________________________________________
 '''def libraryFine(d1, m1, y1, d2, m2, y2):
       if y1>y2:
             fine = 10000
@@ -257,5 +244,26 @@ print(libraryFine(d1, m1, y1, d2, m2, y2))'''
 
 
 
-x="hello new pc"
-print(x)
+
+import math
+def gradingStudents(grades):
+    lis = []
+    for x in range(grades):
+        num5 = math.ceil(grades[x]/5)
+        new_g = num5*5
+        if grades[x] >= 38:
+            if new_g-grades[x] < 3:
+                lis.append(new_g)
+            elif new_g-grades[x] >= 3:
+                lis.append(grades[x])
+        elif grades[x] < 38:
+            lis.append(grades[x])
+
+
+gradingStudents(4)
+gradingStudents(73)
+gradingStudents(67)
+gradingStudents(38)
+gradingStudents(33)
+
+print("finish")
