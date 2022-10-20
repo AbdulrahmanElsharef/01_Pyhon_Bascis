@@ -243,27 +243,108 @@ print(libraryFine(d1, m1, y1, d2, m2, y2))'''
 # print(neww)
 
 
+# import math
+# def gradingStudents(grades):
+#     lis = []
+#     for x in range(grades):
+#         num5 = math.ceil(grades[x]/5)
+#         new_g = num5*5
+#         if grades[x] >= 38:
+#             if new_g-grades[x] < 3:
+#                 lis.append(new_g)
+#             elif new_g-grades[x] >= 3:
+#                 lis.append(grades[x])
+#         elif grades[x] < 38:
+#             lis.append(grades[x])
 
 
-import math
-def gradingStudents(grades):
-    lis = []
-    for x in range(grades):
-        num5 = math.ceil(grades[x]/5)
-        new_g = num5*5
-        if grades[x] >= 38:
-            if new_g-grades[x] < 3:
-                lis.append(new_g)
-            elif new_g-grades[x] >= 3:
-                lis.append(grades[x])
-        elif grades[x] < 38:
-            lis.append(grades[x])
+# gradingStudents(4)
+# gradingStudents(73)
+# gradingStudents(67)
+# gradingStudents(38)
+# gradingStudents(33)
+
+# print("finish")
 
 
-gradingStudents(4)
-gradingStudents(73)
-gradingStudents(67)
-gradingStudents(38)
-gradingStudents(33)
+'''This quarterly scheme is calculated with a threshold target of 32 days per quarter, and the incentive payment for each billable day in excess of such threshold target is shown as follows:
 
-print("finish")
+Days	Bonus
+0 to 32 days	Zero
+33 to 40 days	SGD$325 per billable day
+41 to 48 days	SGD$550 per billable day
+Greater than 48 days	SGD$600 per billable day
+Please note that incentive payment is calculated progressively. As an example, if an employee reached total billable days of 45 in a quarter, his/her incentive payment is computed as follows:'''
+
+
+'''def bonus(n):
+      if n >0 and n <=32 :
+            print (f"bouns is {0} $")
+      elif n >32 and n <=40:
+            x=n-32
+            bon=x*325
+            print (f"bouns is {bon} $")
+      elif n >40 and n <=48:
+            x=8*325
+            y=(n-40)*550
+            bon = x+y
+            print (f"bouns is {bon} $")
+      else:
+            x=8*325
+            y=8*550
+            z=(n-48)*600
+            bon=x+y+z
+            print (f"bouns is {bon} $")
+            
+            
+bonus(15) #➞ 0
+bonus(37) #➞ 1625
+bonus(43)
+bonus(50) #➞ 8200'''
+
+
+# def count_datatypes(*data):
+#       lis=[]
+#       # lis_d=list(date)
+#       order_lis=[int, str, bool, list, tuple, dict]
+#       # for x in order_lis:
+#       for y in data:
+#             if type(y) in order_lis:
+#                   lis.append(data.count(type(y)))
+#             elif type(y) not in order_lis:
+#                   lis.append(0)
+#       return lis
+# print(count_datatypes(1, 45, "Hi", False))
+
+
+# def simpleArraySum(*ar):
+#       # lis=list(ar)
+#       sum = 0
+#       for x in ar:
+#             sum += x
+#       return sum
+# print(simpleArraySum(1000000001 ,1000000002 ,1000000003 ,1000000004 ,1000000005))
+
+
+# from datetime import date
+class player():
+    def __init__(self, name, age, height, weight):
+        self.age = int(age)
+        self.name = str(name)
+        self.height = int(height)
+        self.weight = int(weight)
+
+    def get_age(self):
+        print(f'{self.name} is age {self.age}'.title())
+
+    def get_height(self):
+        print(f'{self.name} is  {self.height} cm'.title())
+
+    def get_weight(self):
+        print(f'{self.name} is age {self.weight} kg'.title())
+
+
+p1 = player("abd", 33, 172, 78)
+p1.get_age()
+p1.get_height()
+p1.get_weight()
