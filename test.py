@@ -412,29 +412,39 @@ dna_to_rna("GTCATACGACGTA") #➞ "CAGUAUGCUGCAU"
 
 '''
 
+'''
+def vowel_links(string):
+      word = string.split(" ")
+      tex1 = ""
+      tex2 = ""
+      for x in word:
+            if str(x).startswith()
+vowel_links("a very large appliance")
+'''
 
-'''def vowel_links(string):
-    word = string.split(" ")
-    tex1 = ""
-    tex2 = ""
-    for x in word:
-        if str(x).startswith()
+
+def price_list(product):
+    '''funciton for updating price list
+    discount=15%
+    products=all items + prices*15%
+    return:
+    new price list after updateupdate prices
+    new list of product after update prices
+    '''
+    discount = (15/100)
+    prices = list(product.values())
+    new_prices = [price+(price*discount) for price in prices]
+    new_list = {item: price+(price*discount)
+                for item, price in product.items()}
+    return f"new prices is {new_prices}\nnew list of products is {new_list}"
 
 
-vowel_links("a very large appliance")'''
+products = {"milk": 15, "tomato": 36, "cups": 22, "tshirt": 68,
+            "pantes": 98, "phone": 154, "toys": 369, "lap": 482}
+result = price_list(products)
+print(result)
 
-from tomlkit import array
 
-lis=[12,12,65,36,78,21]
-def sum_lis(*aray):
-      '''function to sum all of list items
-      for x in list:
-            x=item  #[from list]
-            sum+=x
-      end func
-      '''
-      pass
-result=sum(lis)
-# print(result)
-help(sum_lis)
-
+# # prices={"milk":15,"tomato":36,"cups":22,"tshirt":68,"pantes":98,"phone":154,"toys":369,"lap":482}
+# result = new_prices
+# print(f"new price list is {result}".title())
