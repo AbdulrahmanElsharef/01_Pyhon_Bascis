@@ -326,27 +326,115 @@ bonus(50) #➞ 8200'''
 # print(simpleArraySum(1000000001 ,1000000002 ,1000000003 ,1000000004 ,1000000005))
 
 
-# from datetime import date
-class player():
-    def __init__(self, name, age, height, weight):
-        self.age = int(age)
-        self.name = str(name)
-        self.height = int(height)
-        self.weight = int(weight)
+# # from datetime import date
+# class player():
+#     def __init__(self, name, age, height, weight):
+#         self.age = int(age)
+#         self.name = str(name)
+#         self.height = int(height)
+#         self.weight = int(weight)
 
-    def get_age(self):
-        print(f'{self.name} is age {self.age}'.title())
+#     def get_age(self):
+#         print(f'{self.name} is age {self.age}'.title())
 
-    def get_height(self):
-        print(f'{self.name} is  {self.height} cm'.title())
+#     def get_height(self):
+#         print(f'{self.name} is  {self.height} cm'.title())
 
-    def get_weight(self):
-        print(f'{self.name} is age {self.weight} kg'.title())
+#     def get_weight(self):
+#         print(f'{self.name} is age {self.weight} kg'.title())
 
 
-p1 = player("abd", 33, 172, 78)
-p1.get_age()
-p1.get_height()
-p1.get_weight()
+# p1 = player("abd", 33, 172, 78)
+# p1.get_age()
+# p1.get_height()
+# p1.get_weight()
 
-# helllloooooooooooooooooooooo
+# # helllloooooooooooooooooooooo
+
+
+'''class Employee():
+      def __init__(self,firstname ,lastname ):
+            self.firstname=str(firstname)
+            self.last=str(lastname)
+            self.fullname =f"{self.firstname} {self.last}"
+            self.email=f"{self.firstname}.{self.last}@company.com" 
+
+
+emp_1 = Employee("John", "Smith")
+emp_2 = Employee("Mary",  "Sue")
+emp_3 = Employee("Antony", "Walker")
+print(emp_1.fullname) #➞ "John Smith"
+
+print(emp_2.email) #➞ "mary.sue@company.com"
+
+print(emp_3.firstname) #➞ "Antony"'''
+
+
+'''class num():
+      def __init__(self) :
+            self.ones=0
+            self.threes=0
+            self.nines=0
+      def ones_threes_nines(self,n):
+            self.ones=int(n/1)
+            self.threes=int(n/3)
+            self.nines=int(n/9)
+            return self.ones,self.threes,self.nines
+n1=num()            
+n1 . ones_threes_nines(5)
+print(n1.nines) #➞ 0
+
+print(n1.ones) #➞ 5
+
+print(n1.threes) #➞ 1'''
+
+
+'''def dna_to_rna(string):
+      list_word = list(string)
+      new_word = []
+      for x in list_word:
+            if x == "A":
+                  new_word.append("U")
+            elif x == "T":
+                  new_word.append("A")
+            elif x == "G":
+                  new_word.append("C")
+            elif x == "C":
+                  new_word.append("G")
+      print("".join(new_word))
+
+
+dna_to_rna("ATTAGCGCGATATACGCGTAC") #➞ "UAAUCGCGCUAUAUGCGCAUG"
+
+dna_to_rna("CGATATA") #➞ "GCUAUAU"
+
+dna_to_rna("GTCATACGACGTA") #➞ "CAGUAUGCUGCAU"
+
+'''
+
+
+'''def vowel_links(string):
+    word = string.split(" ")
+    tex1 = ""
+    tex2 = ""
+    for x in word:
+        if str(x).startswith()
+
+
+vowel_links("a very large appliance")'''
+
+from tomlkit import array
+
+lis=[12,12,65,36,78,21]
+def sum_lis(*aray):
+      '''function to sum all of list items
+      for x in list:
+            x=item  #[from list]
+            sum+=x
+      end func
+      '''
+      pass
+result=sum(lis)
+# print(result)
+help(sum_lis)
+
