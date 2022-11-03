@@ -423,28 +423,209 @@ vowel_links("a very large appliance")
 '''
 
 
-def price_list(product):
-    '''funciton for updating price list
-    discount=15%
-    products=all items + prices*15%
-    return:
-    new price list after updateupdate prices
-    new list of product after update prices
-    '''
-    discount = (15/100)
-    prices = list(product.values())
-    new_prices = [price+(price*discount) for price in prices]
-    new_list = {item: price+(price*discount)
-                for item, price in product.items()}
-    return f"new prices is {new_prices}\nnew list of products is {new_list}"
+# def price_list(product):
+#     '''funciton for updating price list
+#     discount=15%
+#     products=all items + prices*15%
+#     return:
+#     new price list after updateupdate prices
+#     new list of product after update prices
+#     '''
+#     discount = (15/100)
+#     prices = list(product.values())
+#     new_prices = [price+(price*discount) for price in prices]
+#     new_list = {item: price+(price*discount)
+#                 for item, price in product.items()}
+#     return f"new prices is {new_prices}\nnew list of products is {new_list}"
 
 
-products = {"milk": 15, "tomato": 36, "cups": 22, "tshirt": 68,
-            "pantes": 98, "phone": 154, "toys": 369, "lap": 482}
-result = price_list(products)
-print(result)
+# products = {"milk": 15, "tomato": 36, "cups": 22, "tshirt": 68,
+#             "pantes": 98, "phone": 154, "toys": 369, "lap": 482}
+# result = price_list(products)
+# print(result)
 
 
-# # prices={"milk":15,"tomato":36,"cups":22,"tshirt":68,"pantes":98,"phone":154,"toys":369,"lap":482}
-# result = new_prices
-# print(f"new price list is {result}".title())
+# def price_list(product):
+#     '''funciton for updating price list
+#     discount=15%
+#     products=all items + prices*15%
+#     return:
+#     new price list after updateupdate prices
+#     new list of product after update prices
+#     '''
+#     discount = (15/100)
+# #     prices = list(product.values())
+#     new_list = {item: price+(price*discount)for item, price in product.items()}
+# #                 for item, price in product.items()}
+#     return new_list
+# products = {"milk": 15, "tomato": 36, "cups": 22, "tshirt": 68,
+#             "pantes": 98, "phone": 154, "toys": 369, "lap": 482}
+# new_prices = list(map(price_list, products.values()))
+# newlist = map(price_list, products.values())
+# print(result)
+# 5
+
+
+# lis=[6 ,4 ,5 ,6, 6]
+# for x in lis:
+#       if x  is max(lis) :
+#             for y in range(0,lis.count(x)):
+#                   lis.remove(x)
+#             break
+# new_max=max(lis)
+# print(new_max)
+
+# stu={"Malika" :[52 ,77 ,78]}
+# quen=stu.get("Malika")
+# total=sum(quen)
+# average=total/len(quen)
+
+# print(format(average, '.2f'))
+
+
+# ABCDEFGHIJKLIMNOQRSTUVWXYZ
+# def wrap(s, max_width):
+#     str_lis = list(s)
+#     new_lis = []
+#     while True:
+#         if len(str_lis) > 0:
+#             new_lis += ((str_lis[:max_width]))
+#             new_lis += ("\n")
+#             str_lis =str_lis[max_width:]
+#         else:
+#             break
+#     return "".join((new_lis))
+
+
+# print(wrap("ABCDEFGHIJKLIMNOQRSTUVWXYZ", 4))
+
+
+# def print_formatted(number):
+#     for x in range(1, number+1):
+#         d = str(x)
+#         o = str(oct(x))[2:]
+#         h = str(hex(x))[2:]
+#         h = h.upper()
+#         b = str(bin(x))[2:]
+#         return (f"{d}\t{o}\t{h}\t{b}")
+
+
+# print(print_formatted(2))
+
+# def time_conver(s):
+#       lis = list(s)
+#       new=int("".join(lis[:2]))
+#       if "P" in lis:
+#             if new<12:
+#                   new +=12
+#                   lis[:2]=str(new)
+#                   return("".join(lis[:-2]))
+#             elif new==12:
+#                   return("".join(lis[:-2]))
+#       elif "A" in lis:
+#             if new<12:
+#                   return("".join(lis[:-2]))
+#             elif new==12:
+#                   lis[:2]=str("00")
+#                   return("".join(lis[:-2]))
+
+
+# print(time_conver("12:40:22AM"))
+
+
+# def repeatedString(s, n):
+#       lis=list(s)
+#       num=0
+#       print(lis[num])
+#       newlis=[]
+#       print(lis)
+#       for x in range(n):
+#             newlis.append(lis[x])
+#             # num=lis[int(num+1)]
+#       return(newlis)
+
+#     # print(new_s)
+#     # count=new_s.count("a")
+#     # print(count)
+
+
+# # print(repeatedString("aba", 10))
+# x,k=1,4
+# p=int(x**3 + x**2 + x + 1)
+
+# sum=p
+# if sum == k:
+#   print(True)
+# else:
+#   print(False)
+
+
+# from functools import reduce
+
+
+# school={"abdo":35,"nour":15,}
+# print(f"studen names and age is {list(school.items())}".title())
+# # try:
+# #       x=5200
+# #       y="abdo"
+# #       print(x/y)
+# # except  :
+# #       print("please number only")
+# new_schoole={("studen " +y):("age "+str(x+5)) for y,x in school.items()  }
+# print(f"studen names and new  age is {list(new_schoole.items())}".title())
+
+# # print(f"studen names and new  age is{list(new_schoole.items())}".title())
+
+
+# import datetime
+
+
+# import calendar
+# x="08 05 2015"
+# # y=list(x.split(" "))
+# # year=int(y[-1])
+# # month=int(y[1])
+# # print(list(x.split(" ")))
+# # cal=calendar.month(year, month)
+# from datetime import date
+# import calendar
+# current_date = date.today()
+# cal=calendar.day_name[current_date.weekday()]
+# print(cal)
+
+
+# if __name__=="__main__":
+#       nm1=int(input("num1"))
+#       nm2=int(input("num2"))
+#       sum()
+#       print(sum)
+
+
+# def main(n,y):
+#       return int(n*y)
+
+
+# # where to save
+# from pytube import YouTube
+# import os
+# from pathlib import Path
+
+# print("Input Vedio URL :")
+# link = ("https://www.youtube.com/watch?v=vEQ8CXFWLZU")
+# url = YouTube(link)
+# print("downloading...")
+# video = url.streams.get_highest_resolution()
+# path_to_download_folder = str(os.path.join(Path.home(), "F:\Download"))
+# video.download(path_to_download_folder)
+# print("downloaded!")
+
+import pyscreenshot
+  
+# To capture the screen
+image = pyscreenshot.grab()
+  
+# To display the captured screenshot
+print(image.show())
+  
+# To save the screenshot
+image.save("GeeksforGeeks.png")
