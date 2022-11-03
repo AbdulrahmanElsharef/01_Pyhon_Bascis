@@ -7,12 +7,18 @@ def num_words():
     '''Create a python function that takes an integer number and
 print the number in words'''
     num = int(input("enter number : "))
-    return num2words(num)
+    return num2words(num,lang='ar')
+    # inpute number and return words in arabic langushe
 
 
 words = num_words()
 print(words)
 help(num_words)
+
+
+# enter number : 175
+# مائةخمسة و سبعون
+
 # enter number : 1987
 # one thousand, nine hundred and eighty-seven
 

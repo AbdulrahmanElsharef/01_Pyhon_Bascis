@@ -7,7 +7,7 @@ from termcolor import colored
 def color_name():
     fname = input("fname :")
     lname = input("lname :")
-    text = colored(fname + " " + lname, 'white', 'on_blue')
+    text = colored(fname + " " + lname, 'yellow', 'on_blue')
     return text
 
 
